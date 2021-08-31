@@ -15,6 +15,8 @@ int main(){
   testing_case(++count, gcd_iterative(1232, 200), 8);
   testing_case(++count, gcd_iterative(30, 165), 15);
   testing_case(++count, gcd_iterative(2, 3), 1);
+
+  gcd_visualization(1731, 421);
   return 0;
 }
 
