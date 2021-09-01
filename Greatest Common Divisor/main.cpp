@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "Euclides-Algorithm.hpp"
+#include "gcd-euclidian.hpp"
 using namespace std;
 
 void testing_case(int index, int testing, int expected);

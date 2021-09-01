@@ -4,5 +4,7 @@
 
 ## Future implementations
 
-- [] ...
+- [] Euclidian Extended
+- [] Stein's algorithm - GCD
+- [] Lehmer's algorithm - GCD
 - [] ...

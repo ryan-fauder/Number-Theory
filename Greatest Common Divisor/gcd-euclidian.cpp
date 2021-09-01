@@ -1,4 +1,5 @@
 #include <iostream>
+#include "gcd-euclidian.hpp"
 int euclides_gcd_extended();
 
 int gcd_recursive(int a, int b){
@@ -24,13 +25,13 @@ int gcd_iterative(int a, int b){
   return a;
 }
 
-int print_division(int dividend, int divisor, int rest, int quotient){
+void print_division(int dividend, int divisor, int rest, int quotient){
   std::cout << dividend << " = ";
   std::cout << divisor << " * " << quotient;
   std::cout << " + " << rest << std::endl;
 }
 
-void gcd_visualization(int dividend, int divisor){
+int gcd_visualization(int dividend, int divisor){
   int rest, quotient;
   while( divisor != 0 ){
     rest = dividend % divisor;
