@@ -1,4 +1,4 @@
-#include "../Greatest Common Divisor/gcd-euclidian.hpp"
+#include "gcd-euclidian.hpp"
 #include "lcm.hpp"
 int lcm(int a, int b){
   // Let a * b = lcm(a, b) * gcd(a, b)
