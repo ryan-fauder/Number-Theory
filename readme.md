@@ -15,6 +15,7 @@
 ## Future implementations
 
 * [ ] Euclidian Extended
+* [ ] Erastotenes Sieve
 * [ ] Stein's algorithm - GCD
 * [ ] Lehmer's algorithm - GCD
 * [ ] ...

@@ -17,6 +17,12 @@ int main(){
   testing_case(++count, gcd_iterative(2, 3), 1);
 
   gcd_visualization(1731, 421);
+
+  int s, t, gcd;
+  gcd = gcd_extended(1731, 421, s, t);
+  
+  // It means that s * a + t * b = d;
+  testing_case(++count, (s*1731 + t*421) - gcd, 0);
   return 0;
 }
 
