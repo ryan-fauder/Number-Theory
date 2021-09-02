@@ -22,8 +22,10 @@ int main()
   modularClass::setNumber(15);
   cout << divModular(5, 6) << endl;
   cout << divModular(7, 13) << endl;
-  
+
   modularClass::setNumber(8);
   cout << divModular(2, 6) << endl;
+  modularClass::setNumber(144);
+  cout << divModular(132, 48) << endl;
   return 0;
 }

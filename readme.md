@@ -13,8 +13,8 @@
 ...
 
 ## Future implementations
-
-* [ ] Euclidian Extended
+* [X] Euclidian Extended
+* [ ] Rework Modular Division
 * [ ] Erastotenes Sieve
 * [ ] Stein's algorithm - GCD
 * [ ] Lehmer's algorithm - GCD

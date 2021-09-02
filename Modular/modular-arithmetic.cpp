@@ -35,7 +35,7 @@ int divModular(int a, int b){
   n0 = modularClass::number / gcd;
   for (int i = 0; i < gcd; i++)
   {
-    std::cout << "- " << x0 + i * n0 << std::endl;
+    std::cout << "- " << absModular(x0 + i * n0) << std::endl;
   }
   
   return x0;
@@ -50,5 +50,5 @@ int inverseModular(int a){
 
 int absModular(int a){
   if(a < 0) return a + modularClass::number;
-  return a;
+  return a % modularClass::number;
 }
