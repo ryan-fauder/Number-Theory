@@ -15,5 +15,11 @@ int main()
   int second = subModular(sumModular(30260, 70441), 967);
 
   cout << multiplyModular(first, second) << endl;
+  
+  modularClass::setNumber(2047);
+  cout << inverseModular(1507) << endl;
+
+  modularClass::setNumber(15);
+  cout << divModular(7, 9) << endl;
   return 0;
 }

@@ -1,6 +1,30 @@
 #include <iostream>
 #include "gcd-euclidian.hpp"
-int euclides_gcd_extended();
+int gcd_extended(int a, int b, int & s, int & t){
+  // Let d = gcd(a, b); So there s, t such that
+  // as + bt = d;
+
+  int rest = a % b;
+  int quotient = (a - rest) / b;
+  int gcd, prev_s;
+
+  if(rest == 0){
+    t = 1;
+    s = 0;
+    return b;
+  }
+
+
+  else {
+    gcd = gcd_extended(b, rest, s, t);
+
+    prev_s = s;
+    s = t;
+    t = prev_s - t * quotient;
+
+    return gcd;
+  }
+}
 
 int gcd_recursive(int a, int b){
   // Let a and b, s.t. a = qb + c. Then, theres a number d, such:

@@ -14,4 +14,8 @@ int multiplyModular(int, int);
 // subtraction
 int subModular(int, int);
 
+int divModular(int, int);
+
+int inverseModular(int);
+
 #endif // __MODULAR_ARITHMETIC_HPP__
