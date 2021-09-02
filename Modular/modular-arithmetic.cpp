@@ -1,5 +1,6 @@
 #include "modular-arithmetic.hpp"
 #include "gcd-euclidian.hpp"
+#include <iostream>
 namespace modularClass{
   int number = 1;
   void setNumber(int n){
@@ -25,10 +26,18 @@ int subModular(int a, int b){
 }
 
 int divModular(int a, int b){
-  int s, t, gcd, x0;
+  int s, t, gcd;
   gcd = gcd_extended(a, modularClass::number, s, t);
   if(b % gcd != 0) return -1;
-  x0 = absModular(multiplyModular(t, b/gcd));
+  int x0, n0;
+
+  x0 = absModular(multiplyModular(s, b/gcd));
+  n0 = modularClass::number / gcd;
+  for (int i = 0; i < gcd; i++)
+  {
+    std::cout << "- " << x0 + i * n0 << std::endl;
+  }
+  
   return x0;
 }
 
