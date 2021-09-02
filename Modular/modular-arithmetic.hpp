@@ -18,4 +18,6 @@ int divModular(int, int);
 
 int inverseModular(int);
 
+int absModular(int a);
+
 #endif // __MODULAR_ARITHMETIC_HPP__

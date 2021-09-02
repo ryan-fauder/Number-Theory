@@ -12,7 +12,7 @@ int sumModular(int a, int b){
 }
 
 int multiplyModular(int a, int b){
-  return (a * b) % modularClass::number;
+  return absModular((a * b) % modularClass::number);
 }
 
 int subModular(int a, int b){
@@ -21,19 +21,22 @@ int subModular(int a, int b){
   // For instance, if a = 2, b = 4 and number = 10
   // sumModular(2, -4) = -2; It's a negative rest, but we should get a positive rest. 
   //In this way, we've to sum rest and number;
-  if(subtraction < 0) subtraction += modularClass::number;
-  return subtraction;
+  return absModular(subtraction);
 }
 
 int divModular(int a, int b){
   int inversed = inverseModular(a);
-  if(inversed == -1) return -1;
-  return b * inversed;
+  return multiplyModular(b, inversed);
 }
 
 int inverseModular(int a){
   int s, t, gcd;
   gcd = gcd_extended(a, modularClass::number, s, t);
   if(gcd != 1) return -1;
-  return s % modularClass::number;
+  return absModular(s % modularClass::number);
+}
+
+int absModular(int a){
+  if(a < 0) return a + modularClass::number;
+  return a;
 }

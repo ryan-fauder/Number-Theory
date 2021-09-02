@@ -13,8 +13,6 @@ int gcd_extended(int a, int b, int & s, int & t){
     s = 0;
     return b;
   }
-
-
   else {
     gcd = gcd_extended(b, rest, s, t);
 
