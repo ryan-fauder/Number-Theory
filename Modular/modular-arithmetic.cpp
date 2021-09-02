@@ -25,8 +25,11 @@ int subModular(int a, int b){
 }
 
 int divModular(int a, int b){
-  int inversed = inverseModular(a);
-  return multiplyModular(b, inversed);
+  int s, t, gcd, x0;
+  gcd = gcd_extended(a, modularClass::number, s, t);
+  if(b % gcd != 0) return -1;
+  x0 = absModular(multiplyModular(t, b/gcd));
+  return x0;
 }
 
 int inverseModular(int a){

@@ -20,6 +20,7 @@ int main()
   cout << inverseModular(1507) << endl;
 
   modularClass::setNumber(15);
-  cout << divModular(7, 9) << endl;
+  cout << divModular(5, 6) << endl;
+  cout << divModular(7, 13) << endl;
   return 0;
 }
