@@ -14,7 +14,7 @@
 
 ## Future implementations
 * [X] Euclidian Extended
-* [ ] Rework Modular
+* [X] Rework Modular
 * [ ] Erastotenes Sieve
 * [ ] Linear Erastotenes Sieve
 * [ ] Stein's algorithm - GCD
