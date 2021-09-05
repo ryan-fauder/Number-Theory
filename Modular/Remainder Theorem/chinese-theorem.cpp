@@ -20,6 +20,7 @@ int modularSystem::getSize(){
 void modularSystem::setTotalM(int value){
   if(value != 0) modularSystem::total_m *= value;
 }
+
 long long int modularSystem::getTotalM(){
   return modularSystem::total_m;
 }
