@@ -1,6 +1,6 @@
 #include <iostream>
 #include "modular-arithmetic.hpp"
-
+#include "gcd-euclidian.hpp"
 using namespace std;
 int main()
 {
@@ -27,5 +27,21 @@ int main()
   cout << divModular(2, 6) << endl;
   modularClass::setNumber(144);
   cout << divModular(132, 48) << endl;
+  modularClass::setNumber(2021);
+
+  int s, t;
+  cout << gcd_visualization(2021, 301) << endl;
+  cout << gcd_extended(2021, 301, s, t) << endl;
+  cout << s << " " << t <<endl;
+  cout << divModular(893, 1519) << endl;
+  cout << divModular(301, 1519) << endl;
+
+  modularClass::setNumber(7980);
+  cout << sumModular(7581, 0) << endl;
+  cout << sumModular(5061, 4940) << endl;
+
+  modularClass::setNumber(50);
+  cout << modularClass::getNumber() << endl;
+  cout << absModular(101) << endl;
   return 0;
 }

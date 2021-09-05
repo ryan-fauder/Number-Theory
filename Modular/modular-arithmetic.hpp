@@ -4,6 +4,7 @@
 namespace modularClass{
   extern int number;
   extern void setNumber(int);
+  extern int getNumber();
 };
 // Sum
 int sumModular(int, int);

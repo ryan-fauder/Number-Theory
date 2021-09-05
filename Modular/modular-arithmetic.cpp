@@ -6,6 +6,9 @@ namespace modularClass{
   void setNumber(int n){
     number = n;
   }
+  int getNumber(){
+    return number;
+  }
 };
 
 int sumModular(int a, int b){
@@ -49,6 +52,7 @@ int inverseModular(int a){
 }
 
 int absModular(int a){
+  a %= modularClass::number;
   if(a < 0) return a + modularClass::number;
-  return a % modularClass::number;
+  return a;
 }
