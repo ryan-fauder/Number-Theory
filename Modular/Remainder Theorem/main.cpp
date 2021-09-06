@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-  modularSystem system1 = modularSystem(4);
+  modularSystem system1(4);
   system1.addEquation(13, 25);
   system1.addEquation(11, 27);
   system1.addEquation(23, 29);
